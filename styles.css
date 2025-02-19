@@ -345,3 +345,62 @@ main {
 .main-right-cart-itself-ordered-dessert-itself-right:hover .main-right-cart-itself-ordered-dessert-itself-right-svg {
     color: var(--dark-rose);
 }
+
+/* MAIN RIGHT CART ITSELF ORDER TOTAL */
+
+.main-right-cart-itself-order-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    color: var(--dark-rose);
+}
+
+.main-right-cart-itself-order-total-inner {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* MAIN RIGHT CART ITSELF CARBON */
+
+.main-right-cart-itself-carbon {
+    background-color: hsl(13, 31%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 5px;
+    border-radius: 0.2rem;
+    column-gap: 10px;
+    padding-block: 10px;
+}
+
+.main-right-cart-itself-carbon-svg {
+    color: hsl(159, 69%, 38%);
+    width: 20px;
+    height: 20px;
+}
+
+.main-right-cart-itself-carbon-paragraph {
+    color: var(--rose-500);
+}
+
+.main-right-cart-itself-carbon-paragraph-inner {
+    font-weight: 600;
+    color: var(--dark-rose);
+}
+
+/* MAIN RIGHT CART ITSELF CONFIRM BUTTON */
+
+.main-right-cart-itself-confirm-button {
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    border: 0;
+    background-color: var(--red);
+    padding-block: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main-right-cart-itself-confirm-button:hover {
+    background-color: hsl(14, 91%, 36%);
+}
