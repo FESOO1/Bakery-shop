@@ -102,6 +102,12 @@ fetchedResources
             dessertItselfAddToCartButton[i].addEventListener('click', () => {
                 dessertItselfAddToCartButton[i].classList.add('main-left-dessert-itself-button-add-to-cart-hidden');
                 dessertItselfDecrementIncrementButtonsContainer[i].classList.add('main-left-dessert-itself-decrement-increment-buttons-active');
+
+                // DISPLAYING THE CART ITSELF CONTAINER
+                if (!cartItself.classList.contains('main-right-cart-itself-active')) {
+                    cartEmpty.classList.add('main-right-cart-empty-hidden');
+                    cartItself.classList.add('main-right-cart-itself-active');
+                };
             });
 
             // DECREMENT BUTTON
@@ -115,7 +121,7 @@ fetchedResources
 
                 // CHECKING THE LENGTH OF THE DESSERTS CONTAINER
                 if (orderedDessertsContainer.childElementCount === 0) {
-                    cartEmpty.classList.add('main-right-cart-empty-hidden');
+                    cartEmpty.classList.remove('main-right-cart-empty-hidden');
                     cartItself.classList.remove('main-right-cart-itself-active');
                 };
             });
