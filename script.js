@@ -129,9 +129,6 @@ fetchedResources
                 `;
             };
 
-            // ADD TO CART BUTTON
-            dessertItselfAddToCartButton[i].addEventListener('click', addToCartButton);
-
             // DECREMENT BUTTON
             dessertItselfDecrementButton[i].addEventListener('click', () => {
                 dessertItselfDecrementIncrementCounter--;
@@ -148,12 +145,18 @@ fetchedResources
                 };
             });
 
-            // INCREMENT BUTTON
-            dessertItselfIncrementButton[i].addEventListener('click', () => {
+            // INCREMENTING BY ONE
+
+            function incrementingByOne() {
                 dessertItselfDecrementIncrementCounter++;
                 dessertItselfDecrementIncrementCounterText[i].textContent = dessertItselfDecrementIncrementCounter;
                 dessertItselfDecrementButton[i].disabled = false;
-            });
+            };
+
+            // INCREMENT BUTTON
+            dessertItselfIncrementButton[i].addEventListener('click', incrementingByOne);
+            // ADD TO CART BUTTON
+            dessertItselfAddToCartButton[i].addEventListener('click', addToCartButton);
         };
     })
     .catch(error => {
