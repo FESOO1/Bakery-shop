@@ -129,8 +129,9 @@ fetchedResources
                 `;
             };
 
-            // DECREMENT BUTTON
-            dessertItselfDecrementButton[i].addEventListener('click', () => {
+            // DECREMENTING BY ONE
+
+            function decrementByOne() {
                 dessertItselfDecrementIncrementCounter--;
                 dessertItselfDecrementIncrementCounterText[i].textContent = dessertItselfDecrementIncrementCounter;
 
@@ -143,7 +144,7 @@ fetchedResources
                     cartEmpty.classList.remove('main-right-cart-empty-hidden');
                     cartItself.classList.remove('main-right-cart-itself-active');
                 };
-            });
+            };
 
             // INCREMENTING BY ONE
 
@@ -153,6 +154,8 @@ fetchedResources
                 dessertItselfDecrementButton[i].disabled = false;
             };
 
+            // DECREMENT BUTTON
+            dessertItselfDecrementButton[i].addEventListener('click', decrementByOne);
             // INCREMENT BUTTON
             dessertItselfIncrementButton[i].addEventListener('click', incrementingByOne);
             // ADD TO CART BUTTON
