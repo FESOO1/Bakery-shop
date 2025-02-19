@@ -59,6 +59,7 @@ main {
 .main-left-dessert-itself {
     display: flex;
     flex-direction: column;
+    row-gap: 15px;
 }
 
 /* MAIN LEFT DESSERT ITSELF IMAGE */
@@ -89,7 +90,7 @@ main {
     align-items: center;
     column-gap: 10px;
     position: absolute;
-    top: -23px;
+    top: -39px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 1.5rem;
@@ -131,7 +132,7 @@ main {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: -23px;
+    top: -39px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 1.5rem;
@@ -175,6 +176,29 @@ main {
 .main-left-dessert-itself-decrement-button-itself:hover .main-left-dessert-itself-decrement-button-itself-svg,
 .main-left-dessert-itself-increment-button-itself:hover .main-left-dessert-itself-increment-button-itself-svg {
     color: var(--red);
+}
+
+/* MAIN LEFT DESSERT ITSELF INFORMATION */
+
+.main-left-dessert-itself-information {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.main-left-dessert-itself-information-category {
+    color: var(--rose-500);
+    font-weight: 400;
+}
+
+.main-left-dessert-itself-information-name {
+    color: var(--dark-rose);
+    font-weight: 700;
+}
+
+.main-left-dessert-itself-information-price {
+    color: var(--red);
+    font-weight: 600;
 }
 
 /* 
