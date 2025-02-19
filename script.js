@@ -9,6 +9,12 @@ const cart = {
     cartOverallPrice: 0,
 };
 
+// CART
+const yourCartDessertCounter = document.querySelector('.main-left-header-inner');
+const orderedDessertsContainer = document.querySelector('.main-right-cart-itself-ordered-desserts');
+const orderTotalText = document.querySelector('.main-right-cart-itself-order-total-inner');
+const confirmOrderButton = document.querySelector('.main-right-cart-itself-confirm-button');
+
 // DISPLAYING THE DESSERTS
 
 async function fetchTheDesserts() {
