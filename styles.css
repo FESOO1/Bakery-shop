@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --f-red-hat-text: "Red Hat Text", serif;
+    --dark-rose: hsl(14, 65%, 9%);
+    --rose-500: hsl(12, 20%, 44%);
+    --red: hsl(14, 86%, 42%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--f-red-hat-text);
+}
+
+body {
+    background-color: hsl(13, 31%, 94%);
+}
+
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 80px 100px;
+    column-gap: 40px;
+}
+
+/* 
+
+    MAIN LEFT
+
+*/
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+/* MAIN LEFT HEADER */
+
+.main-left-header {
+    color: var(--dark-rose);
+    font-size: 2.7rem;
+}
+
+/* MAIN LEFT DESSERTS */
+
+.main-left-desserts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+}
+
+/* MAIN LEFT DESSERT ITSELF */
+
+.main-left-dessert-itself {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN LEFT DESSERT ITSELF IMAGE */
+
+.main-left-dessert-itself-image {
+    line-height: 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.main-left-dessert-itself-image-itself {
+    width: 100%;
+}
+
+/* MAIN LEFT DESSERT ITSELF BUTTONS */
+
+.main-left-dessert-itself-buttons {
+    position: relative;
+}
+
+/* MAIN LEFT DESSERT ITSELF BUTTON ADD TO CART */
+
+.main-left-dessert-itself-button-add-to-cart {
+    width: 70%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.5rem;
+    border: 1px solid var(--rose-500);
+    background-color: white;
+    cursor: pointer;
+}
+
+.main-left-dessert-itself-button-add-to-cart-hidden {
+    display: none;
+}
+
+.main-left-dessert-itself-button-add-to-cart-svg {
+    color: var(--red);
+    width: 22px;
+    height: 22px;
+}
+
+.main-left-dessert-itself-button-add-to-cart-text {
+    color: var(--dark-rose);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.main-left-dessert-itself-button-add-to-cart:hover {
+    border: 1px solid var(--red);
+}
+
+.main-left-dessert-itself-button-add-to-cart:hover .main-left-dessert-itself-button-add-to-cart-text {
+    color: var(--red);
+}
+
+/* MAIN LEFT DESSERT ITSELF DECREMENT INCREMENT BUTTONS */
+
+.main-left-dessert-itself-decrement-increment-buttons {
+    width: 70%;
+    height: 45px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.5rem;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    padding-inline: 10px;
+}
+
+.main-left-dessert-itself-decrement-increment-buttons-active {
+    display: flex;
+}
+
+.main-left-dessert-itself-decrement-button-itself,
+.main-left-dessert-itself-increment-button-itself {
+    width: 25px;
+    height: 25px;
+    border-radius: 2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main-left-dessert-itself-decrement-button-itself-svg,
+.main-left-dessert-itself-increment-button-itself-svg {
+    width: 17px;
+    height: 17px;
+}
+
+.main-left-dessert-itself-decrement-increment-buttons-text {
+    color: white;
+}
+
+.main-left-dessert-itself-decrement-button-itself:hover,
+.main-left-dessert-itself-increment-button-itself:hover {
+    background-color: white;
+}
+
+.main-left-dessert-itself-decrement-button-itself:hover .main-left-dessert-itself-decrement-button-itself-svg,
+.main-left-dessert-itself-increment-button-itself:hover .main-left-dessert-itself-increment-button-itself-svg {
+    color: var(--red);
+}
+
+/* 
+
+    MAIN RIGHT
+
+*/
+
+.main-right {
+    width: 400px;
+}
