@@ -98,8 +98,7 @@ fetchedResources
         for (let i = 0; i < dessertItself.length; i++) {
             let dessertItselfDecrementIncrementCounter = 1;
 
-            // ADD TO CART BUTTON
-            dessertItselfAddToCartButton[i].addEventListener('click', () => {
+            function addToCartButton() {
                 dessertItselfAddToCartButton[i].classList.add('main-left-dessert-itself-button-add-to-cart-hidden');
                 dessertItselfDecrementIncrementButtonsContainer[i].classList.add('main-left-dessert-itself-decrement-increment-buttons-active');
 
@@ -117,7 +116,7 @@ fetchedResources
                             <div class="main-right-cart-itself-ordered-dessert-itself-left-bottom">
                             <h4 class="main-right-cart-itself-ordered-dessert-itself-left-bottom-how-many">1x</h4>
                             <h4 class="main-right-cart-itself-ordered-dessert-itself-left-bottom-price">$${dessertData[i].price.toFixed(2)}</h4>
-                            <h4 class="main-right-cart-itself-ordered-dessert-itself-left-bottom-overall-price">$11.0</h4>
+                            <h4 class="main-right-cart-itself-ordered-dessert-itself-left-bottom-overall-price">$${dessertData[i].price.toFixed(2)}</h4>
                             </div>
                         </div>
                         <button title="Remove from cart" type="button" class="main-right-cart-itself-ordered-dessert-itself-right">
@@ -128,7 +127,10 @@ fetchedResources
                     </div>
                     <hr class="main-right-cart-itself-ordered-desserts-divider">
                 `;
-            });
+            };
+
+            // ADD TO CART BUTTON
+            dessertItselfAddToCartButton[i].addEventListener('click', addToCartButton);
 
             // DECREMENT BUTTON
             dessertItselfDecrementButton[i].addEventListener('click', () => {
