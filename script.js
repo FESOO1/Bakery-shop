@@ -108,6 +108,26 @@ fetchedResources
                     cartEmpty.classList.add('main-right-cart-empty-hidden');
                     cartItself.classList.add('main-right-cart-itself-active');
                 };
+
+                // ADDING THE ADDED DESSERT TO CART
+                orderedDessertsContainer.innerHTML += `
+                    <div class="main-right-cart-itself-ordered-dessert-itself" data-cart-dessert-name="${dessertData[i].name}">
+                        <div class="main-right-cart-itself-ordered-dessert-itself-left">
+                            <h4 class="main-right-cart-itself-ordered-dessert-itself-left-top">${dessertData[i].name}</h4>
+                            <div class="main-right-cart-itself-ordered-dessert-itself-left-bottom">
+                            <h4 class="main-right-cart-itself-ordered-dessert-itself-left-bottom-how-many">1x</h4>
+                            <h4 class="main-right-cart-itself-ordered-dessert-itself-left-bottom-price">$${dessertData[i].price.toFixed(2)}</h4>
+                            <h4 class="main-right-cart-itself-ordered-dessert-itself-left-bottom-overall-price">$11.0</h4>
+                            </div>
+                        </div>
+                        <button title="Remove from cart" type="button" class="main-right-cart-itself-ordered-dessert-itself-right">
+                            <svg class="main-right-cart-itself-ordered-dessert-itself-right-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                            <path d="M19.0005 4.99988L5.00049 18.9999M5.00049 4.99988L19.0005 18.9999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <hr class="main-right-cart-itself-ordered-desserts-divider">
+                `;
             });
 
             // DECREMENT BUTTON
