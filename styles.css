@@ -252,6 +252,7 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    margin-top: 20px;
 }
 
 /* MAIN RIGHT CART ITSELF ORDERED DESSERTS */
@@ -263,3 +264,75 @@ main {
 
 /* MAIN RIGHT CART ITSELF ORDERED DESSERT ITSELF */
 
+.main-right-cart-itself-ordered-dessert-itself {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* MAIN RIGHT CART ITSELF ORDERED DESSERT ITSELF LEFT */
+
+.main-right-cart-itself-ordered-dessert-itself-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+/* MAIN RIGHT CART ITSELF ORDERED DESSERT ITSELF LEFT TOP */
+
+.main-right-cart-itself-ordered-dessert-itself-left-top {
+    color: var(--dark-rose);
+    font-weight: 600;
+}
+
+/* MAIN RIGHT CART ITSELF ORDERED DESSERT ITSELF LEFT BOTTOM */
+
+.main-right-cart-itself-ordered-dessert-itself-left-bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main-right-cart-itself-ordered-dessert-itself-left-bottom-how-many {
+    color: var(--red);
+    font-weight: 600;
+}
+
+.main-right-cart-itself-ordered-dessert-itself-left-bottom-price {
+    color: var(--rose-500);
+    font-weight: 400;
+}
+
+.main-right-cart-itself-ordered-dessert-itself-left-bottom-overall-price {
+    color: var(--rose-500);
+    font-weight: 600;
+}
+
+/* MAIN RIGHT CART ITSELF ORDERED DESSERT ITSELF RIGHT */
+
+.main-right-cart-itself-ordered-dessert-itself-right {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    border: 0;
+    background-color: transparent;
+    border: 1px solid var(--rose-500);
+    cursor: pointer;
+}
+
+.main-right-cart-itself-ordered-dessert-itself-right-svg {
+    color: var(--rose-500);
+    width: 15px;
+    height: 15px;
+}
+
+.main-right-cart-itself-ordered-dessert-itself-right:hover {
+    border: 1px solid var(--dark-rose);
+}
+
+.main-right-cart-itself-ordered-dessert-itself-right:hover .main-right-cart-itself-ordered-dessert-itself-right-svg {
+    color: var(--dark-rose);
+}
