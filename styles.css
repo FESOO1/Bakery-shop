@@ -210,3 +210,56 @@ main {
 .main-right {
     width: 400px;
 }
+
+/* MAIN RIGHT CART */
+
+.main-right-cart {
+    padding: 15px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* MAIN RIGHT CART HEADER */
+
+.main-right-cart-header {
+    color: var(--red);
+}
+
+/* MAIN RIGHT CART EMPTY */
+
+.main-right-cart-empty {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 35px;
+    row-gap: 20px;
+}
+
+.main-right-cart-empty-hidden {
+    display: none;
+}
+
+.main-right-cart-empty-paragraph {
+    color: var(--rose-500);
+    font-weight: 600;
+}
+
+/* MAIN RIGHT CART ITSELF */
+
+.main-right-cart-itself {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/* MAIN RIGHT CART ITSELF ORDERED DESSERTS */
+
+.main-right-cart-itself-ordered-desserts {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN RIGHT CART ITSELF ORDERED DESSERT ITSELF */
+
