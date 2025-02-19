@@ -10,6 +10,8 @@ const cart = {
 };
 
 // CART
+const cartEmpty = document.querySelector('.main-right-cart-empty');
+const cartItself = document.querySelector('.main-right-cart-itself');
 const yourCartDessertCounter = document.querySelector('.main-left-header-inner');
 const orderedDessertsContainer = document.querySelector('.main-right-cart-itself-ordered-desserts');
 const orderTotalText = document.querySelector('.main-right-cart-itself-order-total-inner');
@@ -109,6 +111,12 @@ fetchedResources
 
                 if (dessertItselfDecrementIncrementCounter === 1) {
                     dessertItselfDecrementButton[i].disabled = true;
+                };
+
+                // CHECKING THE LENGTH OF THE DESSERTS CONTAINER
+                if (orderedDessertsContainer.childElementCount === 0) {
+                    cartEmpty.classList.add('main-right-cart-empty-hidden');
+                    cartItself.classList.remove('main-right-cart-itself-active');
                 };
             });
 
